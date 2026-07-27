@@ -1,6 +1,7 @@
 { ... }:
 {
   programs = {
+    gamemode.enable = true;
     kclock.enable = true;
     kdeconnect.enable = true;
     partition-manager.enable = true;
