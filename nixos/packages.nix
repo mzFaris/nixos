@@ -15,6 +15,7 @@
     ]
     ++ (with pkgs.kdePackages; [
       francis
+      kdeconnect-kde
       partitionmanager
     ]);
 }
