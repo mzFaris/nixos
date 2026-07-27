@@ -1,15 +1,11 @@
 { lib, ... }:
 
 let
-  inherit (builtins) filter;
-  inherit (lib.filesystem) listFilesRecursive;
-  inherit (lib.strings) hasSuffix;
+  autoImport = import ../lib/auto-import.nix { inherit lib; };
 in
 
 {
-  imports = filter (hasSuffix ".nix") (
-    map toString (filter (p: p != ./configuration.nix) (listFilesRecursive ./.))
-  );
+  imports = autoImport ./. ./configuration.nix;
 
   nixpkgs.config.allowUnfree = true;
 

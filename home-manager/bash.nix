@@ -3,7 +3,7 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      rebuild = "sudo nixos-rebuild switch --flake";
+      rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#uzi";
     };
   };
 }

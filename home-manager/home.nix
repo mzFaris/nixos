@@ -1,15 +1,11 @@
 { config, pkgs, lib, ... }:
 
 let
-  inherit (builtins) filter map toString;
-  inherit (lib.filesystem) listFilesRecursive;
-  inherit (lib.strings) hasSuffix;
+  autoImport = import ../lib/auto-import.nix { inherit lib; };
 in
 
 {
-  imports = filter (hasSuffix ".nix") (
-    map toString (filter (p: p != ./home.nix) (listFilesRecursive ./.))
-  );
+  imports = autoImport ./. ./home.nix;
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
