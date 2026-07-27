@@ -7,6 +7,7 @@
       antigravity-cli
       brave
       exfatprogs
+      fastfetch
       fd
       helix
       kitty
