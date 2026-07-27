@@ -11,10 +11,10 @@
       kitty
       libreoffice-qt
       nixd
+      ookla-speedtest
       openvpn
     ]
     ++ (with pkgs.kdePackages; [
       francis
-      partitionmanager
     ]);
 }
