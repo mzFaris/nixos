@@ -1,7 +1,7 @@
-{ config, lib, pkgs, ... }:
+{ lib, ... }:
 
 let
-  inherit (builtins) filter map toString;
+  inherit (builtins) filter;
   inherit (lib.filesystem) listFilesRecursive;
   inherit (lib.strings) hasSuffix;
 in
@@ -10,6 +10,8 @@ in
   imports = filter (hasSuffix ".nix") (
     map toString (filter (p: p != ./configuration.nix) (listFilesRecursive ./.))
   );
+
+  nixpkgs.config.allowUnfree = true;
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -36,9 +38,11 @@ in
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.fr = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+    ]; # Enable ‘sudo’ for the user.
   };
 
   system.stateVersion = "26.05"; # Did you read the comment?
 }
-
