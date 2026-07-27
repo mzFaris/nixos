@@ -3,6 +3,7 @@
   environment.systemPackages =
     with pkgs;
     [
+      android-tools
       antigravity-cli
       brave
       exfatprogs
