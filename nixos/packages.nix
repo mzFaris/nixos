@@ -9,6 +9,7 @@
       exfatprogs
       fastfetch
       fd
+      grim
       helix
       kitty
       libreoffice-qt
