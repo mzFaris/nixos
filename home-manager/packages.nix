@@ -6,6 +6,7 @@
     exfatprogs
     gnome-themes-extra # dark adwaita theme
     helix
+    libnotify
     nixd
     ookla-speedtest
     openvpn
