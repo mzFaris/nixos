@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ lib, ... }:
 {
   wayland.windowManager.sway = {
     enable = true;
@@ -25,7 +25,6 @@
       keybindings = lib.mkOptionDefault {
         # Basics
         "${modifier}+q" = "kill";
-        "${modifier}+d" = "rofi -show drun";
 
         # Utilities / Special Keys
         "--locked XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
