@@ -7,7 +7,10 @@
       modifier = "Mod4";
 
       window.titlebar = false;
+
       gaps.inner = 3;
+
+      defaultWorkspace = "workspace number 1";
 
       terminal = "kitty";
 
@@ -22,6 +25,7 @@
       keybindings = lib.mkOptionDefault {
         # Basics
         "${modifier}+q" = "kill";
+        "${modifier}+d" = "rofi -show drun";
 
         # Utilities / Special Keys
         "--locked XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
