@@ -6,6 +6,7 @@
       android-tools
       antigravity-cli
       brave
+      discord
       exfatprogs
       fastfetch
       fd
