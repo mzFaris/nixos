@@ -5,11 +5,11 @@
 }:
 
 let
-  autoImport = import ../lib/auto-import.nix { inherit lib; };
+  autoImport = import ../../lib/auto-import.nix { inherit lib; };
 in
 
 {
-  imports = autoImport ./. ./home.nix;
+  imports = autoImport ./. ./default.nix;
 
   home = {
     pointerCursor = {

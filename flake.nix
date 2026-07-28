@@ -16,13 +16,13 @@
     {
       nixosConfigurations.uzi = nixpkgs.lib.nixosSystem {
         modules = [
-          ./nixos/configuration.nix
+          ./hosts/uzi/default.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.users.fr = ./home-manager/home.nix;
+            home-manager.users.fr = ./home/fr/default.nix;
           }
         ];
       };
