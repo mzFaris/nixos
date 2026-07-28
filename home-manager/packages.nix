@@ -1,9 +1,13 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    rofi
-    kitty
     adwaita-icon-theme # mouse cursor and icons
+    android-tools
+    exfatprogs
     gnome-themes-extra # dark adwaita theme
+    helix
+    nixd
+    ookla-speedtest
+    openvpn
   ];
 }
