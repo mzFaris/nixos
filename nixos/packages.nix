@@ -4,7 +4,6 @@
     with pkgs;
     [
       android-tools
-      antigravity-cli
       brave
       discord
       exfatprogs
@@ -13,9 +12,11 @@
       helix
       kitty
       libreoffice-qt
+      mako
       nixd
       ookla-speedtest
       openvpn
+      wl-clipboard
     ]
     ++ (with pkgs.kdePackages; [
       francis

@@ -26,11 +26,6 @@ in
     pulse.enable = true;
   };
 
-  services = {
-    desktopManager.plasma6.enable = true;
-    displayManager.plasma-login-manager.enable = true;
-  };
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.fr = {
     isNormalUser = true;
