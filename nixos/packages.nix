@@ -5,7 +5,7 @@
     [
       brave
       discord
-      libreoffice
+      # libreoffice
     ]
     ++ (with pkgs.kdePackages; [
       francis
