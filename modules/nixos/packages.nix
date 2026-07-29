@@ -3,6 +3,7 @@
   environment.systemPackages =
     with pkgs;
     [
+      nemo-with-extensions
       gnome-clocks
       brave
       discord
