@@ -20,6 +20,10 @@
         "type:pointer" = {
           accel_profile = "flat";
         };
+        "type:touchpad" = {
+          natural_scroll = "enabled";
+          tap = "enabled";
+        };
       };
 
       keybindings = lib.mkOptionDefault {

@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    et
     adwaita-icon-theme # mouse cursor and icons
     android-tools
     exfatprogs
