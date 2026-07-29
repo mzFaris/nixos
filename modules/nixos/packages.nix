@@ -3,9 +3,9 @@
   environment.systemPackages =
     with pkgs;
     [
+      gnome-clocks
       brave
       discord
-      # libreoffice
     ]
     ++ (with pkgs.kdePackages; [
       francis
