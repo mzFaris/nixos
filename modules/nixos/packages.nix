@@ -3,13 +3,12 @@
   environment.systemPackages =
     with pkgs;
     [
+      networkmanagerapplet
       nemo-with-extensions
-      trashy
       brave
       discord
     ]
     ++ (with pkgs.kdePackages; [
-      francis
       kdenlive
     ]);
 }

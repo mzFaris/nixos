@@ -1,5 +1,6 @@
 { ... }:
 {
   services = {
+    podman.enable = true;
   };
 }

@@ -1,6 +1,7 @@
 { ... }:
 {
   programs = {
+    yt-dlp.enable = true;
     fastfetch.enable = true;
     fd.enable = true;
     kitty.enable = true;

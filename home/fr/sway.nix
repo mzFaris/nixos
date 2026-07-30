@@ -26,6 +26,8 @@
         };
       };
 
+      bars = [ ];
+
       keybindings = lib.mkOptionDefault {
         # Basics
         "${modifier}+q" = "kill";

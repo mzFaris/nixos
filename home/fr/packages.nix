@@ -1,13 +1,14 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    et
     adwaita-icon-theme # mouse cursor and icons
-    android-tools
+    ansible
+    et
     exfatprogs
     gnome-themes-extra # dark adwaita theme
     helix
     libnotify
+    moc
     nixd
     ookla-speedtest
     openvpn
