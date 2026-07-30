@@ -1,7 +1,6 @@
 { ... }:
 {
   programs = {
-    waybar.enable = true;
     gamemode.enable = true;
     kdeconnect.enable = true;
     partition-manager.enable = true;

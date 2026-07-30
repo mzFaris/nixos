@@ -12,18 +12,6 @@ in
   imports = autoImport ./. ./default.nix;
 
   home = {
-    pointerCursor = {
-      name = "Adwaita";
-      package = pkgs.adwaita-icon-theme;
-      size = 24;
-      x11 = {
-        enable = true;
-        defaultCursor = "Adwaita";
-      };
-
-      sway.enable = true;
-    };
-
     # Home Manager needs a bit of information about you and the
     # paths it should manage.
     username = "fr";
