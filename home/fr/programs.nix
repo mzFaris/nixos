@@ -1,6 +1,7 @@
 { ... }:
 {
   programs = {
+    waybar.enable = true;
     yt-dlp.enable = true;
     fastfetch.enable = true;
     fd.enable = true;
