@@ -3,7 +3,7 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "catppuccin_latte";
+      theme = "catppuccin_mocha";
       editor = {
         cursor-shape.insert = "bar";
         line-number = "relative";
