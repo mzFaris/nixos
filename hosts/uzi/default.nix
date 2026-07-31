@@ -5,9 +5,12 @@ let
 in
 
 {
-  imports =
-    (autoImport ./. ./default.nix)
-    ++ (autoImport ../../modules/nixos []);
+  imports = (autoImport ./. ./default.nix) ++ (autoImport ../../modules/nixos [ ]);
+
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   networking.hostName = "uzi";
 
