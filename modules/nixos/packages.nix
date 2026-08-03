@@ -3,6 +3,7 @@
   environment.systemPackages =
     with pkgs;
     [
+      libreoffice-qt
       gnome-themes-extra
       kitty
       brave
