@@ -10,6 +10,7 @@
       discord
     ]
     ++ (with pkgs.kdePackages; [
+      francis
       kdenlive
     ]);
 }
